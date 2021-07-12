@@ -3,5 +3,6 @@ python:
   - 3.9
 install:
   - pip install -r requirements-dev.txt
+  - pip install requirements.txt
 script:
   - flake8
