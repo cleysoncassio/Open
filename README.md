@@ -12,6 +12,9 @@ Link de integração:
 
 [![Python 3](https://pyup.io/repos/github/cleysoncassio/Open/python-3-shield.svg)](https://pyup.io/repos/github/cleysoncassio/Open/)
 
+[![codecov](https://codecov.io/gh/cleysoncassio/Open/branch/master/graph/badge.svg?token=OSB0CSVKLL)](https://codecov.io/gh/cleysoncassio/Open)
+
+
 Upload do projeto no Pypi:
 
 [Pypi](https://test.pypi.org/project/source/0.1/)
