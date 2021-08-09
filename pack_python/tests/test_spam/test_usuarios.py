@@ -2,10 +2,9 @@ from pack_python.spam.modelos import Usuario
 
 
 def test_salvar_usuario(sessao):
-    usuario = Usuario(nome='cleyson',email='cleysoncassio@gmail.com')
+    usuario = Usuario(nome='cleyson', email='cleysoncassio@gmail.com')
     sessao.salvar(usuario)
     assert isinstance(usuario.id, int)
-
 
 
 def test_listar_usuarios(sessao):

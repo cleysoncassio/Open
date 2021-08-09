@@ -1,6 +1,8 @@
 # **Open**
 **Opensource Python**
 
+**PROJETO: ENVIADOR DE SPAM**
+
 Versão do Pyhton:
 - 3.9.6
 

@@ -1,8 +1,5 @@
 from unittest.mock import Mock
-
 import pytest as pytest
-
-from pack_python.spam.enviador_de_email import Enviador
 from pack_python.spam.main import EnviadorDeSpam
 from pack_python.spam.modelos import Usuario
 
@@ -19,7 +16,7 @@ from pack_python.spam.modelos import Usuario
         ]
     ]
 )
-def test_qde_de_spam(sessao,usuarios):
+def test_qde_de_spam(sessao, usuarios):
     for usuario in usuarios:
         sessao.salvar(usuario)
     enviador = Mock()
@@ -48,4 +45,3 @@ def test_parametros_de_spam(sessao):
         'teste assunto',
         'teste corpo'
     )
-
