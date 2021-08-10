@@ -9,7 +9,7 @@ def avatar_url(burlista):
     resp_mock = Mock()
     url = 'https://avatars.githubusercontent.com/u/947107?v=4'
     resp_mock.json.return_value = {
-        'login':'cleyson',
+        'login': 'cleyson',
         'id': '947107',
         'avatar_url': url,
     }
@@ -18,9 +18,9 @@ def avatar_url(burlista):
     return url
 
 
-#def test_buscar_avatar(avatar_url):
-    #url = github_api.buscar_avatar('cleyson')
-    #assert avatar_url == url
+def test_buscar_avatar(avatar_url):
+    url = github_api.buscar_avatar('cleyson')
+    assert avatar_url == url
 
 
 def test_buscar_avatar_integracao():
