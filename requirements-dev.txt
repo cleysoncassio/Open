@@ -5,6 +5,9 @@ pyflakes==2.3.1
 -r requirements.txt
 coverage==5.5
 pytest-cov==2.12.1
+pytest-mock ==3.6.1
+pyparsin ==2.4.7
+packaging ==21.0
 
 #Coverage
 coverage==5.5

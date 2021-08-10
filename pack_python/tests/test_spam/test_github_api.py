@@ -8,7 +8,7 @@ from pack_python import github_api
 def avatar_url(mocker):
     resp_mock = Mock()
     url = 'https://avatars.githubusercontent.com/u/947107?v=4'
-    resp_mock.json.return_value = dict(login='cleyson', id=947107, node_id='MDQ6VXNlcjk0NzEwNw==', avatar_url=url)
+    resp_mock.json.return_value = dict(login='cleyson', id=947107, avatar_url=url)
     get_mock = mocker.patch('pack_python.github_api.requests.get')
     get_mock.return_value = resp_mock
     return url
