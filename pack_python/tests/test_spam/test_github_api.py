@@ -5,7 +5,7 @@ from pack_python import github_api
 
 
 @pytest.fixture
-def avatar_url(burlista):
+def avatar_url(mocker):
     resp_mock = Mock()
     url = 'https://avatars.githubusercontent.com/u/947107?v=4'
     resp_mock.json.return_value = {
@@ -13,7 +13,7 @@ def avatar_url(burlista):
         'id': '947107',
         'avatar_url': url,
     }
-    get_mock = burlista.patch('pack_python.github_api.requests.get')
+    get_mock = mocker.patch('pack_python.github_api.requests.get')
     get_mock.return_value = resp_mock
     return url
 
