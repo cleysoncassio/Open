@@ -3,10 +3,22 @@
 
 **PROJETO: ENVIADOR DE SPAM**
 
-Versão do Pyhton:
+**Versão do Pyhton:**
 - 3.9.6
 
-Link de integração:
+**Para instalar:**
+
+python3 - m venv .venv
+
+source.venv/bin/activate 
+
+pip install -r requirements-dev.txt
+
+**Para Conferir a qualidade do código:**
+
+flake 8
+
+**Link de integração:**
 
 [![Build Status](https://travis-ci.com/cleysoncassio/Open.svg?branch=master)](https://travis-ci.com/cleysoncassio/Open)
 
